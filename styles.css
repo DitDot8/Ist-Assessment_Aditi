@@ -60,6 +60,7 @@ body {
 }
 .myHeader {
     grid-area: header;
+    position: relative;
     background-image: url(/Images/rikonavt-oEWdQsbRVZk-unsplash.jpg);
     background-size: cover;
     padding-top: 36vh;
@@ -71,6 +72,8 @@ body {
 }
 .myBanner {
     grid-area: top1;
+}
+.myBanner1{
     position: absolute;
     text-align: center;
     left: 47vw;
@@ -78,12 +81,58 @@ body {
     font-family: CanvasR;
     font-size: 30px;
     cursor: pointer;
-    display: block;
+    display: inline-block;
     width: auto;
     margin: auto;
     color: var(--ButtonNotClick);
+    z-index: 1;
 }
-.myBanner:hover {
+.myBanner2{
+    position: absolute;
+    top: 0;
+    left: 94vw;
+    display: inline-block;
+    z-index: 1;
+    border: none;
+}
+.myBtn{
+    color: black;
+    padding: 16px;
+    border: none;
+    background-color: transparent;
+}
+.myDropdown{
+    position: relative;
+    display: inline-block;
+}
+.myDropdownContent{
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    color: black;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(175, 173, 173, 0.952);
+    z-index: 1;
+}
+.myDropdownContent a{
+    color: black;
+    padding: 5px 5px;
+    display: block;
+}
+.myDropdownContent a:hover{
+    background-color: rgb(247, 244, 244);
+}
+.myDropdown:hover .myDropdownContent{
+    display: block;
+    padding: 10px 9px;
+}
+.myDropdown:hover .myBtn{
+    background-color: transparent;
+    border: 2px solid;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.myBanner1:hover {
     color: var(--ButtonClick);
     transition: 1s;
 }
