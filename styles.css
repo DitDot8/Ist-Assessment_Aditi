@@ -149,8 +149,10 @@ body {
     height: 25px;
     border: 1px solid;
     margin: auto;
-    padding-top: 8px;
+    padding-top: 3px;
     padding-bottom: 3px;
+    position: relative;
+    line-height: 25px;
 }
 .myButton1:hover {
     background-color: var(--ButtonClick);
@@ -161,6 +163,8 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
+    top: 0;
+    left: 0;
     z-index: 1;
 }
 .myButton2 {
@@ -173,13 +177,23 @@ body {
     height: 25px;
     border: 1px solid;
     margin: auto;
-    padding-top: 8px;
+    padding-top: 3px;
     padding-bottom: 3px;
+    line-height: 25px;
+    position: relative;
 }
 .myButton2:hover {
     background-color: var(--ButtonClick);
     border: 1px solid;
     transition: 1s;
+}
+.myLinkCollection2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 .myButton3 {
     grid-area: button3;
@@ -191,13 +205,23 @@ body {
     height: 25px;
     border: 1px solid;
     margin: auto;
-    padding-top: 8px;
+    padding-top: 3px;
     padding-bottom: 3px;
+    line-height: 25px;
+    position: relative;
 }
 .myButton3:hover {
     background-color: var(--ButtonClick);
     border: 1px solid;
     transition: 1s;
+}
+.myLinkCollection3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 .myMessage {
     grid-area: message;
@@ -230,24 +254,32 @@ body {
 
 .myButton4 {
     grid-area: button4;
-    cursor: pointer;
     background-color: var(--ButtonNotClick);
     color: var(--ButtonColor);
     text-align: center;
     width: 150px;
     height: 25px;
     border: 1px solid;
-    cursor: pointer;
     margin: auto;
     padding-top: 8px;
     padding-bottom: 3px;
     margin-right: 15vw;
     margin-top: 5vh;
+    line-height: 25px;
+    position: relative;
 }
 .myButton4:hover {
     background-color: var(--ButtonClick);
     border: 1px solid;
     transition: 1s;
+}
+.myCustom {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 .myImages{
     grid-area: images;
