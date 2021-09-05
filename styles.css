@@ -1,0 +1,297 @@
+:root {
+    --ButtonClick:rgb(70, 69, 69);
+    --ButtonNotClick: black;
+    --ButtonColor: white;
+}
+@font-face {
+    font-family: Choco;
+    src: url(Fonts/Choco\ Matcha.otf);
+    font-family: Satine;
+    src: url(Fonts/Satine.ttf);
+}
+@font-face{
+    font-family: Shoreline;
+    src: url(Fonts/Shorelines\ Script\ Bold.otf);
+}
+@font-face{
+    font-family: Bintara;
+    src: url(Fonts/Bintari.ttf);
+}
+@font-face{
+    font-family: LemonMilk;
+    src: url(Fonts/LEMONMILK-Regular.otf);
+}
+@font-face{
+    font-family: Elegant;
+    src: url(Fonts/Elegant\ Signature.ttf);
+}
+@font-face{
+    font-family: CanvasR;
+    src: url(Fonts/MADE\ Canvas\ Regular\ PERSONAL\ USE.otf);
+}
+@font-face{
+    font-family: CanvasB;
+    src: url(Fonts/MADE\ Canvas\ Black\ PERSONAL\ USE.otf);
+}
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+.myWrapper {
+    display: grid;
+    row-gap: 4vh;
+    column-gap: 4vw;
+    grid-template-columns: 31vw 5vw 9vw 4vw 9vw 4vw 9vw 1vw;
+    grid-template-rows: 100vh 30vh 57vh 3vh 0.5vh 18vh 4vh 9vh 7vh 7vh 7vh 9vh 15vh;
+    grid-template-areas: "header header header header header header header header"
+                            "image1 about about about about about about blue"
+                            "image1 image2 image2 image3 image3 image4 image4 white"
+                            "image1 button1 button1 button2 button2 button3 button3 green"
+                            "image1 purple purple purple purple purple purple purple"
+                            "blank blank blank blank blank blank blank blank" 
+                             "bab bab images images images images images images"
+                             "message message images images images images images images"
+                             "message message images images images images images images" 
+                             "message message images images images images images images" 
+                             "button4 button4 images images images images images images" 
+                             "button4 button4 images images images images images images"
+                             "footer footer footer footer footer footer footer footer"   
+                                       
+}
+.myHeader {
+    grid-area: header;
+    background-image: url(/Images/rikonavt-oEWdQsbRVZk-unsplash.jpg);
+    background-size: cover;
+    padding-top: 36vh;
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 1vh 99vh;
+    grid-template-areas: "top1"
+                         "header"
+}
+.myBanner {
+    grid-area: top1;
+    position: absolute;
+    text-align: center;
+    left: 47vw;
+    top: 2vh;
+    font-family: CanvasR;
+    font-size: 30px;
+    cursor: pointer;
+    display: block;
+    width: auto;
+    margin: auto;
+    color: var(--ButtonNotClick);
+}
+.myBanner:hover {
+    color: var(--ButtonClick);
+    transition: 1s;
+}
+.myTopHeader {
+    grid-area: header;
+    padding-left: 1vw;
+}
+.myExperienceHeader {
+    font-size: 30px;
+    text-align: left;
+    font-family: Shoreline;
+}
+.myFreshnessHeader {
+    font-size: 15vh;
+    text-align: left;
+    font-family: Satine;
+}
+.myImage1 {
+    grid-area: image1;
+    background-image: url(/Images/dong-cheng-krEjviclb4E-unsplash.jpg);
+    background-size: cover;
+    
+}
+#DiscoverHeader {
+    font-family: Shoreline;
+    padding-top: 3vh;
+    font-size: 3vh;
+    line-height: 4vh;
+}
+#StyleHeader {
+    width: 250px;
+    height: 60px;
+    font-family: Bintara;
+    font-size: 9vh;
+    border-bottom: 4px solid;
+    border-width: 1%;
+}
+.myAbout {
+    grid-area: about;
+}
+.myImage2 {
+    grid-area: image2;
+    background-image: url(/Images/kyle-austin-ZK8u4kJlcfU-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.myImage3 {
+    grid-area: image3;
+    background-image: url(Images/girl-with-red-hat-xaJ-fvPZEsM-unsplash.jpg);
+    background-size: cover;
+}
+.myImage4 {
+    grid-area: image4;
+    background-image: url(/Images/thomas-ae-uAzTOItl26I-unsplash.jpg);
+    background-size: cover;
+}
+.myButton1 {
+    grid-area: button1;
+    background-color: var(--ButtonNotClick);
+    color: var(--ButtonColor);
+    text-align: center;
+    width: 150px;
+    height: 25px;
+    border: 1px solid;
+    cursor: pointer;
+    margin: auto;
+    padding-top: 8px;
+    padding-bottom: 3px;
+}
+.myButton1:hover {
+    background-color: var(--ButtonClick);
+    border: 1px solid;
+    transition: 1s;
+}
+.myButton2 {
+    grid-area: button2;
+    text-align: center;
+    cursor: pointer;
+    background-color: var(--ButtonNotClick);
+    color: var(--ButtonColor);
+    text-align: center;
+    width: 150px;
+    height: 25px;
+    border: 1px solid;
+    cursor: pointer;
+    margin: auto;
+    padding-top: 8px;
+    padding-bottom: 3px;
+}
+.myButton2:hover {
+    background-color: var(--ButtonClick);
+    border: 1px solid;
+    transition: 1s;
+}
+.myButton3 {
+    grid-area: button3;
+    text-align: center;
+    cursor: pointer;
+    background-color: var(--ButtonNotClick);
+    color: var(--ButtonColor);
+    text-align: center;
+    width: 150px;
+    height: 25px;
+    border: 1px solid;
+    cursor: pointer;
+    margin: auto;
+    padding-top: 8px;
+    padding-bottom: 3px;
+}
+.myButton3:hover {
+    background-color: var(--ButtonClick);
+    border: 1px solid;
+    transition: 1s;
+}
+.myMessage {
+    grid-area: message;
+    font-family: CanvasR;
+    margin-left: 2vw;
+    margin-bottom: 0;
+}
+.myMessageTop{
+    font-family: Elegant;
+    font-size: 120px;
+    float: left;
+    padding-right: 15px;
+}
+.myMessageMiddle{
+    font-size: 50px;
+    padding-top: 50px;
+}
+.myMessageBottom{
+    font-size: 80px;
+    margin-left: 7vw;
+    padding-top: 35px;
+    font-family: Bintara;
+    border-bottom: 4px solid;
+    width: 350px;
+}
+.myMessageDown{
+    font-size: 40px;
+    margin-left: 7vw;
+}
+
+.myButton4 {
+    grid-area: button4;
+    cursor: pointer;
+    background-color: var(--ButtonNotClick);
+    color: var(--ButtonColor);
+    text-align: center;
+    width: 150px;
+    height: 25px;
+    border: 1px solid;
+    cursor: pointer;
+    margin: auto;
+    padding-top: 8px;
+    padding-bottom: 3px;
+    margin-right: 15vw;
+    margin-top: 5vh;
+}
+.myButton4:hover {
+    background-color: var(--ButtonClick);
+    border: 1px solid;
+    transition: 1s;
+}
+.myImages{
+    grid-area: images;
+    margin-top: 0vh;
+    margin-bottom: 10vh;
+    display: grid;
+    grid-template-columns: 30vw 1vw 25vw;
+    grid-template-rows: 13vh 20vh 13vh;
+    grid-template-areas: "image5 image5 image6"
+                        "image5 image5 blob"
+                        "image5 image5 image7"
+}
+.myImage5 {
+    grid-area: image5;
+    background-image: url(Images/insung-yoon-rNHCIV_hRp0-unsplash.jpg);
+    background-size: cover;
+    width: 60%;
+    height: 0;
+    padding-top: 60%;
+    background-position: center;
+    border-radius: 50%;
+    margin-top: 10vh;
+    margin-left: 8vw;
+}
+.myImage6 {
+    grid-area: image6;
+    background-image: url(Images/roger-bradshaw-jzlevTsf1kE-unsplash.jpg);
+    background-size: cover;
+    width: 45%;
+    height: 0;
+    padding-top: 45%;
+    background-position: center;
+    border-radius: 50%;
+}
+.myImage7 {
+    grid-area: image7;
+    background-image: url(Images/taisiia-shestopal-fJTu0shqQOo-unsplash.jpg);
+    background-size: cover;
+    width: 45%;
+    height: 0;
+    padding-top: 45%;
+    background-position: center;
+    border-radius: 50%;
+}
+.myFooter {
+    grid-area: footer;
+}
+
