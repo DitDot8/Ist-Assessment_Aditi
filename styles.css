@@ -97,9 +97,21 @@ body {
 }
 .myBtn{
     color: black;
-    padding: 16px;
+    padding: 3px;
+    margin-top: 2.5vh;
     border: none;
     background-color: transparent;
+    font-size: 15px;
+    font-family: CanvasR;
+    position: relative;
+}
+.myShopLink {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 .myDropdown{
     position: relative;
@@ -128,9 +140,10 @@ body {
 }
 .myDropdown:hover .myBtn{
     background-color: transparent;
-    border: 2px solid;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    border-bottom: 2px solid;
+    margin-top: 2.5vh;
+    padding: 3px;
+    margin-bottom: 0px;
 }
 .myBanner1:hover {
     color: var(--ButtonClick);
