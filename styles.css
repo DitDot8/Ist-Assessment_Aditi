@@ -1,8 +1,10 @@
+/* Defining variables */
 :root {
     --ButtonClick:rgb(70, 69, 69);
     --ButtonNotClick: black;
-    --ButtonColor: white;
+    --ButtonColor: rgb(88, 82, 82);
 }
+/* Linking fonts */
 @font-face {
     font-family: Choco;
     src: url(Fonts/Choco\ Matcha.otf);
@@ -33,10 +35,12 @@
     font-family: CanvasB;
     src: url(Fonts/MADE\ Canvas\ Black\ PERSONAL\ USE.otf);
 }
+/* Setting font of body (from google fonts, see index.html) */
 body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
 }
+/* Setting grid for container surrounding all div elements in index */
 .myWrapper {
     display: grid;
     row-gap: 4vh;
@@ -58,6 +62,7 @@ body {
                              "footer footer footer footer footer footer footer footer"   
                                        
 }
+/* Header is organised using a grid and includes text and top banner and assigning image as background*/
 .myHeader {
     grid-area: header;
     position: relative;
@@ -70,9 +75,16 @@ body {
     grid-template-areas: "top1"
                          "header"
 }
+/* Includes dropdown menu and brand name */
 .myBanner {
     grid-area: top1;
 }
+/* Formats link on "Bloom" text */
+.myBannerlink{
+    position: absolute;
+    z-index: 1;
+}
+/* Formats "Bloom" text */
 .myBanner1{
     position: absolute;
     text-align: center;
@@ -87,6 +99,7 @@ body {
     color: var(--ButtonNotClick);
     z-index: 1;
 }
+/* Formats drowpdown position off hover */
 .myBanner2{
     position: absolute;
     top: 0;
@@ -95,6 +108,7 @@ body {
     z-index: 1;
     border: none;
 }
+/* Formats "Shop" text */
 .myBtn{
     color: black;
     padding: 3px;
@@ -105,6 +119,7 @@ body {
     font-family: CanvasR;
     position: relative;
 }
+/* Formats link on "Shop" text, allowing the user to click on it */
 .myShopLink {
     position: absolute;
     width: 100%;
@@ -113,10 +128,12 @@ body {
     left: 0;
     z-index: 1;
 }
+/* Formatting position of dropdown menu on hover*/
 .myDropdown{
     position: relative;
     display: inline-block;
 }
+/* Formatting dropdown box */
 .myDropdownContent{
     display: none;
     position: absolute;
@@ -126,18 +143,22 @@ body {
     box-shadow: 0px 8px 16px 0px rgba(175, 173, 173, 0.952);
     z-index: 1;
 }
+/* Formatting links in drowpdown box */
 .myDropdownContent a{
     color: black;
     padding: 5px 5px;
     display: block;
 }
+/* Changing background colour of links on hover */
 .myDropdownContent a:hover{
     background-color: rgb(247, 244, 244);
 }
+/* Formatting surrounding content in dropdown box*/
 .myDropdown:hover .myDropdownContent{
     display: block;
     padding: 10px 9px;
 }
+/* Adding an underline on "Shop" text on hover along with other formatting */
 .myDropdown:hover .myBtn{
     background-color: transparent;
     border-bottom: 2px solid;
@@ -145,30 +166,35 @@ body {
     padding: 3px;
     margin-bottom: 0px;
 }
+/* Gradually changing the colour of "Bloom" text on hover */
 .myBanner1:hover {
     color: var(--ButtonClick);
     transition: 1s;
 }
+/* Formatting heading text to have a padding and assigning a grid area */
 .myTopHeader {
     grid-area: header;
     padding-left: 1vw;
 }
+/* Formatting "experience" text */
 .myExperienceHeader {
     font-size: 30px;
     text-align: left;
     font-family: Shoreline;
 }
+/* Formatting "Freshness" text */
 .myFreshnessHeader {
     font-size: 15vh;
     text-align: left;
     font-family: Satine;
 }
+/* Assigning image grid area*/
 .myImage1 {
     grid-area: image1;
     background-image: url(/Images/dong-cheng-krEjviclb4E-unsplash.jpg);
     background-size: cover;
-    
 }
+
 #DiscoverHeader {
     font-family: Shoreline;
     padding-top: 3vh;
