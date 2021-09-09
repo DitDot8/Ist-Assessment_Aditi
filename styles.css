@@ -2,7 +2,7 @@
 :root {
     --ButtonClick:rgb(70, 69, 69);
     --ButtonNotClick: black;
-    --ButtonColor: rgb(88, 82, 82);
+    --ButtonColor: rgb(250, 250, 250);
 }
 /* Linking fonts */
 @font-face {
@@ -40,6 +40,9 @@ body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
 }
+a{
+    text-decoration: none;
+}
 /* Setting grid for container surrounding all div elements in index */
 .myWrapper {
     display: grid;
@@ -59,8 +62,7 @@ body {
                              "message message images images images images images images" 
                              "button4 button4 images images images images images images" 
                              "button4 button4 images images images images images images"
-                             "footer footer footer footer footer footer footer footer"   
-                                       
+                             "footer footer footer footer footer footer footer footer"                                     
 }
 /* Header is organised using a grid and includes text and top banner and assigning image as background*/
 .myHeader {
@@ -79,11 +81,6 @@ body {
 .myBanner {
     grid-area: top1;
 }
-/* Formats link on "Bloom" text */
-.myBannerlink{
-    position: absolute;
-    z-index: 1;
-}
 /* Formats "Bloom" text */
 .myBanner1{
     position: absolute;
@@ -98,6 +95,9 @@ body {
     margin: auto;
     color: var(--ButtonNotClick);
     z-index: 1;
+}
+.myBloom{
+    color: black;
 }
 /* Formats drowpdown position off hover */
 .myBanner2{

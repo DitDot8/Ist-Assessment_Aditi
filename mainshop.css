@@ -2,9 +2,13 @@
 :root {
     --ButtonClick:rgb(70, 69, 69);
     --ButtonNotClick: black;
-    --ButtonColor: rgb(88, 82, 82);
+    --ButtonColor: rgb(252, 250, 250);
 }
 /* Linking fonts */
+@font-face{
+    font-family: Raleway;
+    src: url(Fonts/Raleway-Thin.ttf);
+}
 @font-face {
     font-family: Choco;
     src: url(Fonts/Choco\ Matcha.otf);
@@ -38,17 +42,21 @@
 /* Setting font of body (from google fonts, see index.html) */
 body {
     margin: 0;
-    font-family: 'Raleway', sans-serif;
+    font-family: Raleway;
+}
+a{
+    text-decoration: none;
 }
 .myWrapperShop{
     display: grid;
     row-gap: 4vh;
     column-gap: 4vw;
-    grid-template-columns: 33.33vh 33.33vh 33.33vh;
-    grid-template-rows: 100vh 15vh;
-    grid-template-areas: "header header header header header header header header"
-                            "col col col col col col col col "
-                             "footer footer footer footer footer footer footer footer"   
+    grid-template-columns: 30.66vw 30.66vw 30.66vw;
+    grid-template-rows: 100vh 5vh 40vh 15vh;
+    grid-template-areas: "header header header"
+                            "col col col"
+                            "classic contemp wedding"
+                             "footer footer footer"   
                                        
 }
     /* Header is organised using a grid and includes text and top banner and assigning image as background*/
@@ -59,6 +67,7 @@ body {
     background-position: center;
     background-size: cover;
     padding-top: 31vh;
+    z-index: -1;
     display: grid;
     grid-template-columns: 100vw;
     grid-template-rows: 1vh 99vh;
@@ -68,11 +77,6 @@ body {
 /* Includes dropdown menu and brand name */
 .myBanner {
     grid-area: top1;
-}
-/* Formats link on "Bloom" text */
-.myBannerlink{
-    position: absolute;
-    z-index: 1;
 }
 /* Formats "Bloom" text */
 .myBanner1{
@@ -87,12 +91,10 @@ body {
     width: auto;
     margin: auto;
     color: var(--ButtonNotClick);
-    z-index: 1;
+    display: block;
 }
-/* Gradually changing the colour of "Bloom" text on hover */
-.myBanner1:hover {
-    color: var(--ButtonClick);
-    transition: 1s;
+.myBloom{
+    color: black;
 }
 /* Formatting heading text to have a padding and assigning a grid area */
 .myTopHeader {
@@ -168,4 +170,170 @@ body {
     margin-top: 2.5vh;
     padding: 3px;
     margin-bottom: 0px;
+}
+.myCollection{
+    grid-area: col;
+    margin-left: 8vw;
+}
+.myClassic{
+    grid-area: classic;
+    padding-top: 4vh;
+    padding-left: 8vw;
+    padding-right: 4vw;
+    display: grid;
+    row-gap: 2vh;
+    column-gap: 4vw;
+    grid-template-columns: 15.66vw;
+    grid-template-rows: 2vh 45vh 5vh 1vh;
+    grid-template-areas: "ClHeader"
+                        "ClImage"
+                        "ClInfo"
+                        "ClBtn"
+}
+.ClHeader{
+    grid-area: ClHeader;
+    font-size: 20px;
+}
+.ClImage{
+    grid-area: ClImage;
+    margin-top: 3vh;
+    background-image: url(/Images/anastasia-lysiak-mba39OxwVJk-unsplash.jpg);
+    background-size: cover;
+}
+.ClBtn {
+    grid-area: ClBtn;
+    background-color: var(--ButtonNotClick);
+    color: var(--ButtonColor);
+    text-align: center;
+    width: 15.66vw;
+    height: 25px;
+    border: 1px solid;
+    margin: auto;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    position: relative;
+    line-height: 25px;
+}
+.ClBtn:hover {
+    background-color: var(--ButtonClick);
+    border: 1px solid;
+    transition: 1s;
+}
+.myLinkClBtn {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.ClInfo{
+    grid-area: ClInfo;
+   text-align: center;
+   font-size: 17px;
+}
+.myContemp{
+    grid-area: contemp;
+    padding-top: 4vh;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    display: grid;
+    row-gap: 4vh;
+    grid-template-columns: 18.66vw;
+    grid-template-rows: 2vh 40vh 17vh 1vh;
+    grid-template-areas: "CoHeader"
+                        "CoImage"
+                        "CoInfo"
+                        "CoBtn"
+}
+.CoHeader{
+    grid-area: CoHeader;
+    font-size: 20px;
+}
+.CoImage{
+    grid-area: CoImage;
+    background-image: url(/Images/anastasia-lysiak-mba39OxwVJk-unsplash.jpg);
+}
+.CoBtn {
+    grid-area: CoBtn;
+    background-color: var(--ButtonNotClick);
+    color: var(--ButtonColor);
+    text-align: center;
+    width: 150px;
+    height: 25px;
+    border: 1px solid;
+    margin: auto;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    position: relative;
+    line-height: 25px;
+}
+.CoBtn:hover {
+    background-color: var(--ButtonClick);
+    border: 1px solid;
+    transition: 1s;
+}
+.myLinkCoBtn {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.CoInfo{
+    grid-area: CoInfo;
+}
+.myWedding{
+    grid-area: wedding;
+    padding-top: 4vh;
+    padding-left: 4vw;
+    padding-right: 8vw;
+    display: grid;
+    row-gap: 4vh;
+    column-gap: 4vw;
+    grid-template-columns: 18.66vw;
+    grid-template-rows: 2vh 40vh 10vh 1vh;
+    grid-template-areas: "WedHeader"
+                        "WedImage"
+                        "WedInfo"
+                        "WedBtn"
+}
+.WedHeader{
+    grid-area: WedHeader;
+    font-size: 20px;
+}
+.WedImage{
+    grid-area: WedImage;
+    background-color: violet;
+}
+.WedBtn {
+    grid-area: WedBtn;
+    background-color: var(--ButtonNotClick);
+    color: var(--ButtonColor);
+    text-align: center;
+    width: 150px;
+    height: 25px;
+    border: 1px solid;
+    margin: auto;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    position: relative;
+    line-height: 25px;
+}
+.WedBtn:hover {
+    background-color: var(--ButtonClick);
+    border: 1px solid;
+    transition: 1s;
+}
+.myLinkWedBtn {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.WedInfo{
+    grid-area: WedInfo;
 }
