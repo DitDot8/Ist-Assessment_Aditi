@@ -394,7 +394,15 @@ img{
     background-image: url(/Images/Flower\ edited.png);
     background-size: cover;
     background-position: center;
-    
+}
+.myContempMain{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: var(--BorderColor) 1px solid;
+    border-bottom: var(--BorderColor) 1px solid;
+    background-image: url(/Images/the-creative-exchange-d2zvqp3fpro-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .myClassicHeaderCol1{
     grid-area: colclass;
@@ -482,6 +490,9 @@ img{
 }
 .myItems{
     grid-area: items;
+}
+.myItemsContemp{
+   
 }
 table {
     width: 100%;
