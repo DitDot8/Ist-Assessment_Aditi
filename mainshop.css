@@ -40,6 +40,22 @@
     font-family: CanvasB;
     src: url(Fonts/MADE\ Canvas\ Black\ PERSONAL\ USE.otf);
 }
+@font-face{
+    font-family: Bebas;
+    src: url(Fonts/Bebas-Regular.ttf);
+}
+@font-face{
+    font-family: TypoL;
+    src: url(/Fonts/Typo\ Formal\ Light\ Demo.otf);
+}
+@font-face{
+    font-family: TypoR;
+    src: url(Fonts/Typo\ Formal\ Regular\ Demo.otf);
+}
+@font-face{
+    font-family: RalewayR;
+    src: url(Fonts/Raleway-Regular.ttf);
+}
 /* Setting font of body (from google fonts, see index.html) */
 body {
     margin: 0;
@@ -47,6 +63,7 @@ body {
 }
 a{
     text-decoration: none;
+    color: black;
 }
 img{
     width: 280px;
@@ -471,12 +488,14 @@ table {
 }
 th{
     text-align: left;
-    padding-left: 3vw;
     vertical-align: top;
 }
 td{
     text-align: center;
     vertical-align: top;
+}
+.myItemName{
+    padding-left: 3vw;
 }
 .myPrice{
     text-align: left;
@@ -492,46 +511,111 @@ td{
 }
 .myWrapperPinkBouquet{
     display: grid;
-    row-gap: 4vh;
+    row-gap: 8vh;
     column-gap: 4vw;
     grid-template-columns: 44vw 52vw;
-    grid-template-rows: 9vh 4vh 3vh 3vh 65vh 5vh 40vh 15vh 15vh;
+    grid-template-rows: 9vh 1vw 4vh 8vh 3vh 40vh 5vh 3vh 40vh 15vh;
     grid-template-areas: "top1 top1"
+                        "link link"
                         "imgpink pinksubhead"
                         "imgpink pinkprice"
                         "imgpink pinkbtn"
                         "imgpink pinkdetails"
+                        ". ."
                         "pinksubheadprod pinksubheadprod"
                         "pinktable pinktable"
                         "footer footer"
 }
+.myLinks{
+    grid-area: link;
+    margin-left: 8vw;
+}
 .myImgPink{
     grid-area: imgpink;
-    margin-left: 4vw;
-    background-image: url(/Images/larisa-birta-xZhwZhPrzlg-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
+    margin-left: 8vw;
+}
+.myPinkImg{
+    width: 36vw;
+    height: 72vh;
 }
 .myPinkSubhead{
     grid-area: pinksubhead;
-    font-size: 35px;
-    
+    font-size: 70px;
+    font-family: Bebas;
 }
 .myPinkPrice{
     grid-area: pinkprice;
+    font-family: RalewayR;
+    padding-top: 4vh;
+    font-size: 18px;
+}
+.myStock{
+    padding-top: 3vh;
+    font-family: RalewayR;
+    color: rgb(83, 131, 12);
 }
 .PinkBtn{
     grid-area: pinkbtn;
 }
 .myPinkDetails{
     grid-area: pinkdetails;
+    margin-right: 14vw;
+    font-size: 20px;
 }
 .mySubheadproduct{
     grid-area: pinksubheadprod;
+    margin-left: 8vw;
+    font-family: Elegant;
+    font-size: 50px;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
 }
 .myPinkTable{
     grid-area: pinktable;
+    margin-left: 6.5vw;
+    margin-right: 6.5vw;
 }
 .myFooter{
     grid-area: footer;
+}
+.ContactBtn {
+    background-color: var(--ButtonNotClick);
+    color: var(--ButtonColor);
+    text-align: center;
+    width: 15.66vw;
+    height: 25px;
+    border: 1px solid;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    position: relative;
+    line-height: 25px;
+}
+.ContactBtn:hover {
+    background-color: var(--ButtonClick);
+    border: 1px solid;
+    transition: 1s;
+}
+.myLinkContactBtn {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.myPricePink{
+    text-align: left;
+    padding-bottom: 7vh;
+    padding-left: 1vw;
+}
+.myItemNamePink{
+    text-align: left;
+    vertical-align: top; 
+    padding-left: 1vw;
+}
+.myRelatedProducts{
+    border-top: var(--BorderColor) 1px solid;
+    border-bottom: var(--BorderColor) 1px solid;
+    width: 100vw;
+    height: 70vh;
 }
