@@ -631,6 +631,9 @@ td{
     margin-left: 6.5vw;
     margin-right: 6.5vw;
 }
+.myPinkTableResponsive{
+    display: none;
+}
 .myFooter{
     grid-area: footer;
 }
@@ -1244,18 +1247,20 @@ td{
     display: grid;
     row-gap: 8vh;
     column-gap: 4vw;
-    grid-template-columns: 44vw 52vw;
-    grid-template-rows: 9vh 1vw 4vh 8vh 3vh 40vh 5vh 3vh 40vh 15vh;
-    grid-template-areas: "top1 top1"
-                        "link link"
-                        "imgpink pinksubhead"
-                        "imgpink pinkprice"
-                        "imgpink pinkbtn"
-                        "imgpink pinkdetails"
-                        ". ."
-                        "pinksubheadprod pinksubheadprod"
-                        "pinktable pinktable"
-                        "footer footer"
+    grid-template-columns: 100vw;
+    grid-template-rows: 9vh 1vw 30vh 8vh 3vh 15vh 5vh 3vh 25vh 15vh 42vh 15vh;
+    grid-template-areas: "top1"
+                        "link"
+                        "imgpink"
+                        "imgpink"
+                        "imgpink"
+                        "pinksubhead"
+                        "pinkprice"
+                        "pinkbtn"
+                        "pinkdetails"
+                        "pinksubheadprod"
+                        "pinktable"
+                        "footer"
 }
 .myLinks{
     grid-area: link;
@@ -1266,19 +1271,21 @@ td{
     margin-left: 8vw;
 }
 .myPinkImg{
-    width: 36vw;
+    width: 84vw;
     height: 72vh;
 }
 .myPinkSubhead{
     grid-area: pinksubhead;
     font-size: 70px;
     font-family: Bebas;
+    margin-left: 8vw;
 }
 .myPinkPrice{
     grid-area: pinkprice;
     font-family: RalewayR;
     padding-top: 4vh;
     font-size: 18px;
+    margin-left: 8vw;
 }
 .myStock{
     padding-top: 3vh;
@@ -1287,11 +1294,14 @@ td{
 }
 .PinkBtn{
     grid-area: pinkbtn;
+    margin-left: 8vw;
+    margin-top: 2vh;
 }
 .myPinkDetails{
     grid-area: pinkdetails;
     margin-right: 14vw;
     font-size: 20px;
+    margin-left: 8vw;
 }
 .mySubheadproduct{
     grid-area: pinksubheadprod;
@@ -1302,9 +1312,10 @@ td{
     padding-bottom: 1vh;
 }
 .myPinkTable{
-    grid-area: pinktable;
-    margin-left: 6.5vw;
-    margin-right: 6.5vw;
+    display: none;
+}
+.myPinkTableResponsive{
+    display: block;
 }
 .myFooter{
     grid-area: footer;
@@ -1353,12 +1364,12 @@ td{
 .myWrapperContact{
     display: grid;
     row-gap: 4vh;
-    grid-template-columns: 63vw 37vw;
+    grid-template-columns: 100vw;
     grid-template-rows: 4vh 50vh 70vh 15vh;
-    grid-template-areas: "top1 top1"
-                        "colclass colclass"
-                        "contactlist contactimg"
-                        "footer footer"
+    grid-template-areas: "top1"
+                        "colclass"
+                        "contactlist"
+                        "footer"
 }
 .myContactMain{
     width: 100vw;
@@ -1373,7 +1384,7 @@ td{
 .myCustomHeaderCol1{
     grid-area: colclass;
     margin-top: 18vh;
-    margin-left: 2vw;
+    margin-left: 10vw;
     font-family: LemonMilk;
     color: white;
     font-size: 38px;
@@ -1382,7 +1393,7 @@ td{
 .myContactList{
     grid-area: contactlist;
     border-right: solid 2px;
-    margin-left: 2vw;
+    margin-left: 10vw;
     margin-top: 5vh;
     padding-right: 20vw;
     font-size: 20px;
@@ -1395,19 +1406,10 @@ td{
 .myThankyou{
     padding-top: 3vh;
     font-family: elegant;
-    font-size: 55px;
+    font-size: 39px;
 }
 .myContactImg{
-    grid-area: contactimg;
-    background-image: url(/Images/edward-howell-dZ3YRMco4XU-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 50%;
-    width: 70%;
-    height: 0;
-    padding-top: 70%;
-    margin-left: 7vw;
-    margin-top: 5vh;
+    display: none;
 }
 .myFooter {
     grid-area: footer;
@@ -1418,7 +1420,7 @@ td{
 .myBloomFooter{
     font-family: CanvasR;
     font-size: 30px;
-    margin-left: 46vw;
+    margin-left: 45vw;
 }
 .myContactFooter{
     float: right;
@@ -1431,6 +1433,6 @@ td{
     transition: 1s;
 }
 .myCopyright{
-    margin-left: 43.5vw;
+    margin-left: 39vw;
 } 
 }
