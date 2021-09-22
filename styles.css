@@ -515,7 +515,6 @@ a{
     .myWrapper {
         display: grid;
         row-gap: 4vh;
-        
         grid-template-columns: 58vw 38vw;
         grid-template-rows: 100vh 30vh 57vh 30vh 87vh 9vh 87vh 9vh 87vh 9vh 35vh 9vh 60vh 15vh;
         grid-template-areas: "header header"
