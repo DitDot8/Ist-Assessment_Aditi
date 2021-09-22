@@ -411,6 +411,17 @@ img{
                          "items"
                         "footer"   
 }
+.myWrapperCollection2{
+    display: grid;
+    row-gap: 4vh;
+    grid-template-columns: 100vw;
+    grid-template-rows: 4vh 50vh 3vh 195vh 15vh;
+    grid-template-areas: "top1"
+                        "colclass"
+                        "sortby"
+                         "items"
+                        "footer"   
+}
 .myClassicMain{
     padding-top: 10px;
     padding-bottom: 10px;
@@ -456,7 +467,7 @@ img{
     line-height: 3vh;
 }
 .mySort{
-    margin-left: 85vw;
+    margin-left: 84vw;
     float: left;
     font-family: CanvasR;
     position: absolute;
@@ -524,6 +535,9 @@ img{
 }
 .myItems{
     grid-area: items;
+}
+.myItemsResponsive{
+    display: none;
 }
 table {
     width: 100%;
@@ -1074,8 +1088,8 @@ img{
 .myWrapperCollection1{
     display: grid;
     row-gap: 4vh;
-    grid-template-columns: 90vw;
-    grid-template-rows: 4vh 50vh 3vh 130vh 15vh;
+    grid-template-columns: 100vw;
+    grid-template-rows: 4vh 50vh 3vh 260vh 15vh;
     grid-template-areas: "top1"
                         "colclass"
                         "sortby"
@@ -1127,7 +1141,7 @@ img{
     line-height: 3vh;
 }
 .mySort{
-    margin-left: 85vw;
+    margin-left: 65%;
     float: left;
     font-family: CanvasR;
     position: absolute;
@@ -1195,12 +1209,17 @@ img{
 }
 .myItems{
     grid-area: items;
+    display: none;
+}
+.myItemsResponsive{
+    grid-area: items;
+    display: block;
 }
 table {
     width: 100%;
 }
 th{
-    text-align: left;
+    text-align: center;
     vertical-align: top;
 }
 td{
@@ -1208,11 +1227,10 @@ td{
     vertical-align: top;
 }
 .myItemName{
-    padding-left: 3vw;
+    text-align: center;
 }
 .myPrice{
-    text-align: left;
-    padding-left: 3vw;
+    text-align: center;
     padding-bottom: 7vh;
 }
 .myImageFade{
