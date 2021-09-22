@@ -3,6 +3,7 @@
     --ButtonClick:rgb(70, 69, 69);
     --ButtonNotClick: black;
     --ButtonColor: rgb(250, 250, 250);
+    --FooterColor: rgb(255, 244, 245);
 }
 /* Linking fonts */
 @font-face {
@@ -39,9 +40,11 @@
 body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
+    margin-bottom: 0px;
 }
 a{
     text-decoration: none;
+    color: black;
 }
 /* Setting grid for container surrounding all div elements in index */
 .myWrapper {
@@ -49,19 +52,20 @@ a{
     row-gap: 4vh;
     column-gap: 4vw;
     grid-template-columns: 31vw 5vw 9vw 4vw 9vw 4vw 9vw 1vw;
-    grid-template-rows: 100vh 30vh 57vh 3vh 0.5vh 18vh 4vh 9vh 7vh 7vh 7vh 9vh 15vh;
+    grid-template-rows: 100vh 30vh 57vh 3vh 0.5vh 18vh 4vh 9vh 7vh 7vh 7vh 9vh 60vh 15vh;
     grid-template-areas: "header header header header header header header header"
-                            "image1 about about about about about about blue"
-                            "image1 image2 image2 image3 image3 image4 image4 white"
-                            "image1 button1 button1 button2 button2 button3 button3 green"
-                            "image1 purple purple purple purple purple purple purple"
-                            "blank blank blank blank blank blank blank blank" 
-                             "bab bab images images images images images images"
+                            "image1 about about about about about about ."
+                            "image1 image2 image2 image3 image3 image4 image4 ."
+                            "image1 button1 button1 button2 button2 button3 button3 ."
+                            "image1 . . . . . . ."
+                            ". . . . . . . ." 
+                             ". . images images images images images images"
                              "message message images images images images images images"
                              "message message images images images images images images" 
                              "message message images images images images images images" 
                              "button4 button4 images images images images images images" 
                              "button4 button4 images images images images images images"
+                             "choose choose choose choose choose choose choose choose"
                              "footer footer footer footer footer footer footer footer"                                     
 }
 /* Header is organised using a grid and includes text and top banner and assigning image as background*/
@@ -346,7 +350,7 @@ a{
     color: var(--ButtonColor);
     text-align: center;
     width: 150px;
-    height: 25px;
+    height: 30px;
     border: 1px solid;
     margin: auto;
     padding-top: 8px;
@@ -377,7 +381,7 @@ a{
     grid-template-columns: 30vw 1vw 25vw;
     grid-template-rows: 13vh 20vh 13vh;
     grid-template-areas: "image5 image5 image6"
-                        "image5 image5 blob"
+                        "image5 image5 ."
                         "image5 image5 image7"
 }
 .myImage5 {
@@ -412,7 +416,88 @@ a{
     background-position: center;
     border-radius: 50%;
 }
+.myWhyMain{
+    grid-area: choose;
+    border-top: rgb(228, 227, 227) solid 1px;
+    border-bottom: rgb(228, 227, 227) solid 1px;
+    margin-top: 4vh;
+    padding-top: 4.5vh;
+    display: grid;
+    column-gap: 3vh;
+    grid-template-columns: 47vw 53vw;
+    grid-template-rows: 46vh 4vh;
+    grid-template-areas: "main logo"
+                         "button5 logo"
+}
+.myChooseMain{
+    grid-area: main;
+    padding-top: 12vh;
+    padding-left: 2vw;
+    padding-right: 3vw;
+    border-right:  solid 2px;
+}
+.myChooseUs{
+    font-family: Elegant;
+    font-size: 50px;
+    padding-bottom: 0.5vh;
+}
+.myChooseDetails{
+    padding-bottom: 1vh;
+}
+.myLogo{
+    grid-area: logo;
+    background-image: url(images/Bloom\ logo.png);
+    background-size: cover;
+    margin-right: 6vw;
+}
+.myButton5 {
+    grid-area: button5;
+    background-color: var(--ButtonNotClick);
+    color: var(--ButtonColor);
+    text-align: center;
+    width: 130px;
+    height: 25px;
+    border: 1px solid;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    line-height: 25px;
+    position: relative;
+}
+.myButton5:hover {
+    background-color: var(--ButtonClick);
+    border: 1px solid;
+    transition: 1s;
+}
+.myButtonLink5 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
 .myFooter {
     grid-area: footer;
+    background-color: var(--FooterColor);
+    padding-top: 4vh;
+    margin-bottom: 0px;
+}
+.myBloomFooter{
+    font-family: CanvasR;
+    font-size: 30px;
+    margin-left: 46vw;
+}
+.myContactFooter{
+    float: right;
+    margin-right: 4vw;
+    margin-top: 1vh;
+    color: black;
+}
+.myContactFooter:hover {
+    background-color: rgb(207, 207, 207);
+    transition: 1s;
+}
+.myCopyright{
+    margin-left: 43.5vw;
 }
 
