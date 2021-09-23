@@ -10,37 +10,35 @@
 /* Linking fonts */
 @font-face{
     font-family: Raleway;
-    src: url(Fonts/Raleway-Thin.ttf);
+    src: url(/Fonts/Raleway-Thin.ttf);
 }
 @font-face {
-    font-family: Choco;
-    src: url(Fonts/Choco\ Matcha.otf);
     font-family: Satine;
-    src: url(Fonts/Satine.ttf);
+    src: url(/Fonts/Satine.ttf);
 }
 @font-face{
     font-family: Shoreline;
-    src: url(Fonts/Shorelines\ Script\ Bold.otf);
+    src: url(/Fonts/Shorelines\ Script\ Bold.otf);
 }
 @font-face{
     font-family: Bintara;
-    src: url(Fonts/Bintari.ttf);
+    src: url(/Fonts/Bintari.ttf);
 }
 @font-face{
     font-family: LemonMilk;
-    src: url(Fonts/LEMONMILK-Regular.otf);
+    src: url(/Fonts/LEMONMILK-Regular.otf);
 }
 @font-face{
     font-family: Elegant;
-    src: url(Fonts/Elegant\ Signature.ttf);
+    src: url(/Fonts/Elegant\ Signature.ttf);
 }
 @font-face{
     font-family: CanvasR;
-    src: url(Fonts/MADE\ Canvas\ Regular\ PERSONAL\ USE.otf);
+    src: url(/Fonts/MADE\ Canvas\ Regular\ PERSONAL\ USE.otf);
 }
 @font-face{
     font-family: Bebas;
-    src: url(Fonts/Bebas-Regular.ttf);
+    src: url(/Fonts/Bebas-Regular.ttf);
 }
 @font-face{
     font-family: TypoL;
@@ -48,11 +46,11 @@
 }
 @font-face{
     font-family: TypoR;
-    src: url(Fonts/Typo\ Formal\ Regular\ Demo.otf);
+    src: url(/Fonts/Typo\ Formal\ Regular\ Demo.otf);
 }
 @font-face{
     font-family: RalewayR;
-    src: url(Fonts/Raleway-Regular.ttf);
+    src: url(/Fonts/Raleway-Regular.ttf);
 }
 
 /* Setting font of body (from google fonts, see index.html) */
