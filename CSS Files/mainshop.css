@@ -834,11 +834,12 @@ td{
 .myWrapperCustom{
     display: grid;
     grid-template-columns: 49vw 2vw 49vw;
-    grid-template-rows: 9vh 10vh 66vh 10vh 70vh 30vh 15vh;
+    grid-template-rows: 9vh 10vh 66vh 10vh 55vh 30vh 30vh 15vh;
     grid-template-areas: "top1 top1 top1"
                           "selectheader . presentimg1"
                           "presentation . presentimg1"
                           ". . ."
+                          "presentimg2 . selectf"
                           "presentimg2 . selectf"
                           "ordercustom ordercustom ordercustom"
                           "footer footer footer"
@@ -857,32 +858,24 @@ td{
 .myPresentation{
     grid-area: presentation;
 }
-.myBtnCustom{
+.presentationSelector{
     background-color: white;
     color: black;
     text-align: center;
     width: 15.66vw;
     height: 25px;
     border: black 1px solid;
-    margin: auto;
+    margin: 50px;
     padding-top: 3px;
     padding-bottom: 3px;
     position: relative;
     line-height: 25px;
+    float: left;
+    cursor: pointer;
 }
-.myBtnCustomClick{
+.selectedOne{
     background-color: black;
     color: white;
-    text-align: center;
-    width: 15.66vw;
-    height: 25px;
-    border: black 1px solid;
-    display: none;
-    margin: auto;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    position: relative;
-    line-height: 25px;
 }
 .myPresentImg1{
     grid-area: presentimg1;
@@ -891,8 +884,42 @@ td{
 .mySelectf{
     grid-area: selectf;
     display: grid;
-    grid-template-columns: 33.33vw 33.33vw 33.33vw;
-    grid-template-rows: 23.33vh 23.33vh 23.33vh;
+    grid-template-columns: 49vw;
+    grid-template-rows: 10vh 70vh;
+    grid-template-areas: "headercustom"
+                         "tablecustom"
+}
+.mySelectHeader{
+    grid-area: headercustom;
+    font-size: 30px;
+
+}
+.mySelectedFlowerName{
+    float: right;
+    font-size: 20px;
+    margin-right: 2vw;
+}
+.myTableCustom{
+    width: 100%;
+    height: 75vh;
+    grid-area: tablecustom;
+}
+.flowerCircle{
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+}
+.flowerHighlight{
+    border: green solid 5px;
+}
+.flowerImage {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.myRowCustom{
+    vertical-align: middle;
 }
 .myPresentImg2{
     grid-area: presentimg2;

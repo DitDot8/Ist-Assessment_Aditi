@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="CSS Files/mainshop.css">
-    <script src="flowerFunctions.js"></script>
 </head>
 <body>
     <div class="myWrapperCustom">
@@ -39,22 +38,76 @@
             </div>
         </div>
         <div class="myPresentation">
-            <div class="myBtnCustom" onclick="handleBtnClick()">Bouquet</div>
-            <div class="myBtnCustomClick">Bouquet</div>
+            <div  data-name="Bouquet" class="presentationSelector" >Bouquet</div>
+            <div  data-name="Vase" class="presentationSelector">Vase</div>
         </div>
         <div class="myPresentImg1"></div>
         <div class="myPresentImg2"></div>
         <div class="mySelectf">
-            <table>
-
+            <div class="mySelectHeader">
+                Select 4 different flowers
+                <div class="mySelectedFlowerName">
+                </div>
+            </div>
+            <table class="myTableCustom">
+                <tr>
+                    <td class="myRowCustom">
+                        <div class="flowerCircle">
+                            <img data-name="White Carnations" class="flowerImage" src="/Images/gayatri-malhotra-J7Mmjl3CRZM-unsplash.jpg" alt="">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="flowerCircle">
+                            <img data-name="Pink Carnations" class="flowerImage" src="/Images/taisiia-shestopal-t1ky9HSKBQw-unsplash.jpg" alt="">
+                        </div>
+                    </td>
+                       <td>
+                            <div class="flowerCircle">
+                                <img data-name="Orange Carnations" class="flowerImage" src="/Images/hannah-cole-UJsXOpkacNo-unsplash.jpg" alt="">
+                            </div>
+                       </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="flowerCircle">
+                            <img data-name="Coral Roses" class="flowerImage" src="/Images/tiffany-nguyen-1dvIeM57k3I-unsplash.jpg" alt="">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="flowerCircle">
+                            <img data-name="Pink Roses" class="flowerImage" src="/Images/tomoo-ichigami-4mpD_L9CAo4-unsplash.jpg" alt="">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="flowerCircle">
+                            <img data-name="White Roses" class="flowerImage" src="/Images/nicole-pearce-OtXG86jiDIo-unsplash.jpg" alt="">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="flowerCircle">
+                            <img data-name="Mixed Orchids" class="flowerImage" src="/Images/hasmik-ghazaryan-olson--AILcFMJXTU-unsplash.jpg" alt="">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="flowerCircle">
+                            <img data-name="Pink Orchids" class="flowerImage" src="/Images/annie-spratt-_7s3nr24BIg-unsplash.jpg" alt="">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="flowerCircle">
+                            <img data-name="Blue Orchids" class="flowerImage" src="/Images/markus-spiske-b6NTA4OtSwQ-unsplash.jpg" alt="">
+                        </div>
+                    </td>
+                </tr>
             </table>
-            <div class="myOrderImg"></div>
-            <div class="myOrderText">Rose</div>
         </div>
         <div class="myOrderMain">
-            <div class="myOrderHeader">YOUR ORDER</div>
-            <div class="myOrder">
+            <div class="myOrderHeader">
+                YOUR ORDER
             </div>
+            <div class="myOrder">You have not selected anything</div>
             <div class="myOrderDetails">
                 To place your order, <a href="contact.html" class="myCustomLink">contact us</a> and we'll get back to you within business hours.
             </div>
@@ -67,5 +120,7 @@
             <div class="myCopyright">© Copyright 2021 Bloom</div>
         </div>
     </div>
+    <script src="/flowerFunctions.js"></script>
+
 </body>
 </html>
