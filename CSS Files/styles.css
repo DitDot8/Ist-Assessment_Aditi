@@ -9,37 +9,37 @@
 /* Linking fonts */
 @font-face {
     font-family: Choco;
-    src: url(//Ist-Assessment_Aditi/Fonts/Choco\ Matcha.otf);
+    src: url(/Ist-Assessment_Aditi/Fonts/Choco\ Matcha.otf);
     font-family: Satine;
-    src: url(//Ist-Assessment_Aditi/Fonts/Satine.ttf);
+    src: url(/Ist-Assessment_Aditi/Fonts/Satine.ttf);
 }
 @font-face{
     font-family: Shoreline;
-    src: url(//Ist-Assessment_Aditi/Fonts/Shorelines\ Script\ Bold.otf);
+    src: url(/Ist-Assessment_Aditi/Fonts/Shorelines\ Script\ Bold.otf);
 }
 @font-face{
     font-family: Bintara;
-    src: url(//Ist-Assessment_Aditi/Fonts/Bintari.ttf);
+    src: url(/Ist-Assessment_Aditi/Fonts/Bintari.ttf);
 }
 @font-face{
     font-family: LemonMilk;
-    src: url(//Ist-Assessment_Aditi/Fonts/LEMONMILK-Regular.otf);
+    src: url(/Ist-Assessment_Aditi/Fonts/LEMONMILK-Regular.otf);
 }
 @font-face{
     font-family: Elegant;
-    src: url(//Ist-Assessment_Aditi/Fonts/Elegant\ Signature.ttf);
+    src: url(/Ist-Assessment_Aditi/Fonts/Elegant\ Signature.ttf);
 }
 @font-face{
     font-family: CanvasR;
-    src: url(//Ist-Assessment_Aditi/Fonts/MADE\ Canvas\ Regular\ PERSONAL\ USE.otf);
+    src: url(/Ist-Assessment_Aditi/Fonts/MADE\ Canvas\ Regular\ PERSONAL\ USE.otf);
 }
 @font-face{
     font-family: CanvasB;
-    src: url(//Ist-Assessment_Aditi/Fonts/MADE\ Canvas\ Black\ PERSONAL\ USE.otf);
+    src: url(/Ist-Assessment_Aditi/Fonts/MADE\ Canvas\ Black\ PERSONAL\ USE.otf);
 }
 @font-face{
     font-family: Raleway;
-    src: url(//Ist-Assessment_Aditi/Fonts/Raleway-Thin.ttf);
+    src: url(/Ist-Assessment_Aditi/Fonts/Raleway-Thin.ttf);
 }
 
 /* Formatting body */
@@ -82,7 +82,7 @@ a{
 .myHeader {
     grid-area: header;
     position: relative;
-    background-image: url(//Ist-Assessment_Aditi/Images/rikonavt-oEWdQsbRVZk-unsplash.jpg);
+    background-image: url(/Ist-Assessment_Aditi/Images/rikonavt-oEWdQsbRVZk-unsplash.jpg);
     background-size: cover;
     padding-top: 36vh;
     display: grid;
@@ -218,7 +218,7 @@ a{
 /* Assigning image grid area*/
 .myImage1 {
     grid-area: image1;
-    background-image: url(//Ist-Assessment_Aditi/Images/dong-cheng-krEjviclb4E-unsplash.jpg);
+    background-image: url(/Ist-Assessment_Aditi/Images/dong-cheng-krEjviclb4E-unsplash.jpg);
     background-size: cover;
 }
 
@@ -248,20 +248,20 @@ a{
 /* Formatting images */
 .myImage2 {
     grid-area: image2;
-    background-image: url(//Ist-Assessment_Aditi/Images/kyle-austin-ZK8u4kJlcfU-unsplash.jpg);
+    background-image: url(/Ist-Assessment_Aditi/Images/kyle-austin-ZK8u4kJlcfU-unsplash.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .myImage3 {
     grid-area: image3;
-    background-image: url(//Ist-Assessment_Aditi/Images/girl-with-red-hat-xaJ-fvPZEsM-unsplash.jpg);
+    background-image: url(/Ist-Assessment_Aditi/Images/girl-with-red-hat-xaJ-fvPZEsM-unsplash.jpg);
     background-size: cover;
 }
 
 .myImage4 {
     grid-area: image4;
-    background-image: url(//Ist-Assessment_Aditi/Images/thomas-ae-uAzTOItl26I-unsplash.jpg);
+    background-image: url(/Ist-Assessment_Aditi/Images/thomas-ae-uAzTOItl26I-unsplash.jpg);
     background-size: cover;
 }
 
@@ -443,7 +443,7 @@ a{
 /* Formatting images to be circular and in position */
 .myImage5 {
     grid-area: image5;
-    background-image: url(//Ist-Assessment_Aditi/Images/insung-yoon-rNHCIV_hRp0-unsplash.jpg);
+    background-image: url(/Ist-Assessment_Aditi/Images/insung-yoon-rNHCIV_hRp0-unsplash.jpg);
     background-size: cover;
     width: 60%;
     height: 0;
@@ -456,7 +456,7 @@ a{
 
 .myImage6 {
     grid-area: image6;
-    background-image: url(//Ist-Assessment_Aditi/Images/roger-bradshaw-jzlevTsf1kE-unsplash.jpg);
+    background-image: url(/Ist-Assessment_Aditi/Images/roger-bradshaw-jzlevTsf1kE-unsplash.jpg);
     background-size: cover;
     width: 45%;
     height: 0;
@@ -467,7 +467,7 @@ a{
 
 .myImage7 {
     grid-area: image7;
-    background-image: url(//Ist-Assessment_Aditi/Images/taisiia-shestopal-fJTu0shqQOo-unsplash.jpg);
+    background-image: url(/Ist-Assessment_Aditi/Images/taisiia-shestopal-fJTu0shqQOo-unsplash.jpg);
     background-size: cover;
     width: 45%;
     height: 0;
@@ -515,7 +515,7 @@ a{
 /* Formatting logo image */
 .myLogo{
     grid-area: logo;
-    background-image: url(//Ist-Assessment_Aditi/Images/Bloom\ logo.png);
+    background-image: url(/Ist-Assessment_Aditi/Images/Bloom\ logo.png);
     background-size: cover;
     margin-right: 6vw;
 }
@@ -634,7 +634,7 @@ a{
     .myHeader {
         grid-area: header;
         position: relative;
-        background-image: url(//Ist-Assessment_Aditi/Images/rikonavt-oEWdQsbRVZk-unsplash.jpg);
+        background-image: url(/Ist-Assessment_Aditi/Images/rikonavt-oEWdQsbRVZk-unsplash.jpg);
         background-size: cover;
         padding-top: 36vh;
         display: grid;
@@ -770,7 +770,7 @@ a{
     /* Assigning image grid area*/
     .myImage1 {
         grid-area: image1;
-        background-image: url(//Ist-Assessment_Aditi/Images/dong-cheng-krEjviclb4E-unsplash.jpg);
+        background-image: url(/Ist-Assessment_Aditi/Images/dong-cheng-krEjviclb4E-unsplash.jpg);
         background-size: cover;
         margin-right: 9vw;
     }
@@ -803,7 +803,7 @@ a{
     /* Formatting images */
     .myImage2 {
         grid-area: image2;
-        background-image: url(//Ist-Assessment_Aditi/Images/kyle-austin-ZK8u4kJlcfU-unsplash.jpg);
+        background-image: url(/Ist-Assessment_Aditi/Images/kyle-austin-ZK8u4kJlcfU-unsplash.jpg);
         background-size: cover;
         background-position: center;
         margin-left: 9vw;
@@ -821,7 +821,7 @@ a{
 
     .myImage4 {
         grid-area: image4;
-        background-image: url(//Ist-Assessment_Aditi/Images/thomas-ae-uAzTOItl26I-unsplash.jpg);
+        background-image: url(/Ist-Assessment_Aditi/Images/thomas-ae-uAzTOItl26I-unsplash.jpg);
         background-size: cover;
         margin-left: 9vw;
         margin-right: 0vw;
