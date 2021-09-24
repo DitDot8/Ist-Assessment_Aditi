@@ -434,7 +434,7 @@ img{
     display: grid;
     row-gap: 4vh;
     grid-template-columns: 100vw;
-    grid-template-rows: 4vh 50vh 3vh 195vh 15vh;
+    grid-template-rows: 4vh 50vh 3vh 125vh 15vh;
     grid-template-areas: "top1"
                         "colclass"
                         "sortby"
@@ -1032,6 +1032,51 @@ td{
     text-decoration: underline;
 }
 
+/* Grid for contact page */
+.myWrapperStoryboard{
+    display: grid;
+    row-gap: 4vh;
+    grid-template-columns: 100vw;
+    grid-template-rows: 4vh 50vh 20vh 15vh;
+    grid-template-areas: "top1"
+                        "storyboardheader"
+                        "storyboardImg1"
+                        "footer"
+}
+
+/* Header for storyboard page */
+.myStoryboardMain{
+    width: 100vw;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: var(--BorderColor) 1px solid;
+    border-bottom: var(--BorderColor) 1px solid;
+    background-image: url(/Images/saketh-garuda-ngu4VY2hI48-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Formatting header of contact page*/
+.myStoryboardHeader{
+    grid-area: storyboardheader;
+    margin-top: 18vh;
+    margin-left: 2vw;
+    font-family: LemonMilk;
+    color: black;
+    font-size: 38px;
+    line-height: 9vh;
+}
+
+.myStoryboardImage{
+    grid-area: storyboardImg1;
+    margin-top: 5vh;
+    margin-left: 2vw;
+}
+
+.myStoryboardLink{
+    text-decoration: underline;
+}
+
 /* Formatting footer */
 .myFooter {
     grid-area: footer;
@@ -1054,6 +1099,18 @@ td{
 }
 
 .myContactFooter:hover {
+    background-color: rgb(207, 207, 207);
+    transition: 1s;
+}
+
+.myStoryboardFooter{
+    float: right;
+    margin-right: 4vw;
+    margin-top: 1vh;
+    color: black;
+}
+
+.myStoryboardFooter:hover {
     background-color: rgb(207, 207, 207);
     transition: 1s;
 }
@@ -1445,7 +1502,19 @@ td{
                             "items"
                             "footer"   
     }
-
+    
+    /* Formatting grid for collections2 and 3 (contemporary and wedding collections) */
+    .myWrapperCollection2{
+    display: grid;
+    row-gap: 4vh;
+    grid-template-columns: 100vw;
+    grid-template-rows: 4vh 50vh 3vh 200vh 15vh;
+    grid-template-areas: "top1"
+                        "colclass"
+                        "sortby"
+                         "items"
+                        "footer"   
+}
     /* Header of classic collection */
     .myClassicMain{
         padding-top: 10px;
@@ -2035,9 +2104,9 @@ td{
     }
 
     .myBloomFooter{
-    font-family: CanvasR;
-    font-size: 30px;
-    margin-left: 45vw;
+        font-family: CanvasR;
+        font-size: 30px;
+        margin-left: 46vw;
     }
 
     .myContactFooter{
@@ -2051,7 +2120,20 @@ td{
         background-color: rgb(207, 207, 207);
         transition: 1s;
     }
+
+    .myStoryboardFooter{
+        float: right;
+        margin-right: 4vw;
+        margin-top: 1vh;
+        color: black;
+    }
+
+    .myStoryboardFooter:hover {
+        background-color: rgb(207, 207, 207);
+        transition: 1s;
+    }
+
     .myCopyright{
-        margin-left: 39vw;
-    } 
+        margin-left: 43.5vw;
+    }
 }

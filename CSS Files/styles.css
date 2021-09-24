@@ -576,6 +576,18 @@ a{
     transition: 1s;
 }
 
+.myStoryboardFooter{
+    float: right;
+    margin-right: 4vw;
+    margin-top: 1vh;
+    color: black;
+}
+
+.myStoryboardFooter:hover {
+    background-color: rgb(207, 207, 207);
+    transition: 1s;
+}
+
 .myCopyright{
     margin-left: 43.5vw;
 }
@@ -1066,7 +1078,7 @@ a{
     .myBloomFooter{
         font-family: CanvasR;
         font-size: 30px;
-        margin-left: 45vw;
+        margin-left: 46vw;
     }
 
     .myContactFooter{
@@ -1080,9 +1092,21 @@ a{
         background-color: rgb(207, 207, 207);
         transition: 1s;
     }
-    
+
+    .myStoryboardFooter{
+        float: right;
+        margin-right: 4vw;
+        margin-top: 1vh;
+        color: black;
+    }
+
+    .myStoryboardFooter:hover {
+        background-color: rgb(207, 207, 207);
+        transition: 1s;
+    }
+
     .myCopyright{
-        margin-left: 39vw;
+        margin-left: 43.5vw;
     }
 }
 
